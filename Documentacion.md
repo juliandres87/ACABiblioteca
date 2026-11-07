@@ -1,1024 +1,241 @@
-# ACA -- Programación Avanzada
+# Sistema de Gestión de Biblioteca - ACABiblioteca
 
-# Sistema de Gestión de Biblioteca
+---
 
-------------------------------------------------------------------------
+## 1. PORTADA
 
-## PORTADA
+**Institución Universitaria CUN**  
+**Programa:** Ingenieria de Sistemas  
+**Asignatura:** Programación Avanzada  
 
-**\[CUN\]**
+### Proyecto: Sistema de Gestión de Biblioteca (ACABiblioteca)
 
-**\[PROGRAMACIÓN AVANZADA\]**
+**Presentado por:**  
+Julián Andrés Hernández Alarcón  
 
-### ACA -- Programación Avanzada
+**Docente:**  
+Veronica Castro Munar  
 
-### Sistema de Gestión de Biblioteca
+**Ubicación y Fecha:**  
+Amagá, Antioquia, Octubre 2026  
 
-**Presentado por:**\
-\[Julián Andrés hernández Alarcón\]
+---
 
-**Docente:**\
-\[Veronica Castro Munar\]
+## 2. CONTRAPORTADA
 
-**Fecha:**\
-\[Amaga Antiquia, Octubre 2026\]
+**Título del Proyecto:** Sistema de Gestión de Biblioteca (ACABiblioteca)  
+**Curso:** Programación Avanzada  
+**Grupo:** 54465  
+**Estudiante:** Julián Andrés Hernández Alarcón  
+**Docente:** Veronica Castro Munar  
+**Institución:** CUN  
+**Año:** 2026  
 
-------------------------------------------------------------------------
+Proyecto desarrollado como evidencia final del curso, implementando una aplicación de escritorio robusta con C#, Windows Forms, arquitectura orientada a objetos y persistencia de datos relacional en Microsoft SQL Server.
 
-# CONTRAPORTADA
+---
 
-**Sistema de Gestión de Biblioteca**
+## 3. INTRODUCCIÓN
 
-Proyecto desarrollado como evidencia del curso de **Programación
-Avanzada**, aplicando Programación Orientada a Objetos, base de datos
-relacional, arquitectura por capas, operaciones CRUD, validaciones,
-manejo de excepciones y conexión con SQL Server.
+El desarrollo de software orientado a la automatización de procesos administrativos constituye una herramienta fundamental en el entorno educativo moderno. El presente documento técnico detalla la conceptualización, diseño, implementación y pruebas del **Sistema de Gestión de Biblioteca (ACABiblioteca)**.
 
-**Estudiante(s):** \[Julián Andrés hernández Alarcón\]\
-**Programa:** \[Programación Avanzada\]\
-**Grupo:** \[54465\]\
-**Docente:** \[VERONICA CASTRO\]\
-**Institución:** \[CUN\]\
-**Año:** \[2026\]
+La aplicación permite resolver la problemática de control de inventario bibliográfico, registro de lectores, asignación de préstamos y recepción de devoluciones de manera automatizada. Utilizando C# bajo el paradigma de la Programación Orientada a Objetos (POO), formularios estructurados en Windows Forms y una base de datos relacional en SQL Server, el sistema garantiza la consistencia de los datos, la integridad referencial y una experiencia de usuario fluida y estandarizada.
 
-------------------------------------------------------------------------
+---
 
-# TABLA DE CONTENIDO
+## 4. OBJETIVOS
 
-> **Nota:** Actualizar esta sección al finalizar el documento, de
-> acuerdo con la numeración real de las páginas.
+### 4.1 Objetivo General
+Desarrollar una aplicación de escritorio integral para la gestión de una biblioteca utilizando C#, Windows Forms y SQL Server, que permita administrar libros, autores, editoriales, usuarios y controlar de forma automatizada los préstamos y devoluciones bajo los principios de la Programación Orientada a Objetos.
 
-1.  Introducción
-2.  Objetivos
-    -   2.1 Objetivo general
-    -   2.2 Objetivos específicos
-3.  Planteamiento del problema
-4.  Análisis de requerimientos
-5.  Casos de uso
-6.  Diagrama de clases
-7.  Modelo entidad-relación
-8.  Diccionario de datos
-9.  Arquitectura del sistema
-10. Explicación de los módulos desarrollados
-11. Capturas de pantalla del sistema
-12. Pruebas de funcionamiento
-13. Conclusiones
-14. Recomendaciones
-15. Referencias bibliográficas
+### 4.2 Objetivos Específicos
+* Aplicar los principios de la Programación Orientada a Objetos (POO) en el diseño de clases y control de formularios.
+* Diseñar e implementar una base de datos relacional normalizada en Microsoft SQL Server.
+* Programar operaciones CRUD eficientes y seguras mediante consultas parametrizadas.
+* Integrar un módulo de control de existencias en tiempo real para préstamos (`-1`) y devoluciones (`+1`).
+* Implementar una arquitectura lógica por capas (Presentación, Negocio, Datos, Base de Datos).
+* Incorporar validaciones estrictas y manejo de excepciones con bloques `try-catch`.
+* Gestionar el control de versiones utilizando Git y GitHub.
 
-------------------------------------------------------------------------
+---
 
-# 1. INTRODUCCIÓN
+## 5. TABLA DE CONTENIDO
 
-En este apartado se debe presentar de manera general el proyecto
-desarrollado.
+1. Portada
+2. Contraportada
+3. Introducción
+4. Objetivos
+5. Tabla de Contenido
+6. Planteamiento del problema
+7. Análisis de requerimientos
+8. Casos de uso
+9. Diagrama de clases
+10. Modelo entidad-relación
+11. Diccionario de datos
+12. Arquitectura del sistema
+13. Explicación de los módulos desarrollados
+14. Descripción de la conexión con SQL Server
+15. Capturas de pantalla del sistema
+16. Pruebas de funcionamiento
+17. Conclusiones
+18. Recomendaciones
+19. Referencias bibliográficas
 
-**Texto guía:**
+---
 
-El presente documento describe el desarrollo del **Sistema de Gestión de
-Biblioteca**, una aplicación de escritorio cuyo propósito es facilitar
-la administración de \[describir brevemente los procesos principales de
-la biblioteca\].
+## 6. PLANTEAMIENTO DEL PROBLEMA
 
-El sistema fue desarrollado utilizando **\[C# / .NET / Windows Forms /
-SQL Server / otras tecnologías utilizadas\]**, aplicando principios de
-Programación Orientada a Objetos y una arquitectura por capas.
+La biblioteca de la institución educativa operaba bajo métodos manuales y registros físicos descentralizados para el control de sus libros, autores y usuarios. Esta metodología presentaba deficiencias críticas:
+* **Pérdida de trazabilidad:** Dificultad para conocer en tiempo real qué usuarios mantenían libros en su poder y las fechas límite de entrega.
+* **Inconsistencias de inventario:** Préstamos autorizados de libros con existencias agotadas debido a la falta de validación numérica automática.
+* **Errores humanos:** Duplicidad en registros de usuarios o libros debido a la ausencia de restricciones de unicidad.
 
-La aplicación permite gestionar \[libros, autores, categorías, usuarios,
-préstamos, devoluciones y demás funcionalidades realmente
-implementadas\].
+Para dar solución a esta problemática, se diseñó e implementó **ACABiblioteca**, una solución digital centralizada que automatiza los flujos de trabajo bibliotecarios.
 
-> **Reemplazar este texto por la introducción propia del proyecto.**
+---
 
-------------------------------------------------------------------------
+## 7. ANÁLISIS DE REQUERIMIENTOS
 
-# 2. OBJETIVOS
+### 7.1 Requerimientos Funcionales
+* **RF01 - Gestión de Libros:** Registrar, consultar, editar, eliminar y buscar libros por ISBN o título, vinculándolos a su respectivo autor y editorial.
+* **RF02 - Gestión de Autores:** Administrar el registro biográfico de los autores.
+* **RF03 - Gestión de Editoriales:** Registrar y administrar las editoriales asociadas al catálogo.
+* **RF04 - Gestión de Usuarios:** Registrar lectores con validación de documentos únicos.
+* **RF05 - Gestión de Préstamos:** Asociar un usuario con un libro disponible, registrando fechas y descontando existencias en inventario (`-1`).
+* **RF06 - Gestión de Devoluciones:** Actualizar el estado del préstamo a `'Devuelto'` y reponer la existencia al libro (`+1`).
+* **RF07 - Consultas y Reportes:** Visualizar información consolidada del estado de la biblioteca.
+* **RF08 - Navegación Centralizada:** Formulario principal con menú lateral y pantalla de bienvenida.
 
-## 2.1 Objetivo general
+### 7.2 Requerimientos No Funcionales
+* **RNF01:** Interfaz gráfica intuitiva, limpia y unificada en todos los formularios.
+* **RNF02:** Uso estricto de consultas parametrizadas para prevenir inyecciones SQL.
+* **RNF03:** Manejo centralizado de excepciones con mensajes descriptivos al usuario.
+  
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f3504b3f-df9d-4dee-b7b2-191c284c190a" />
 
-Desarrollar un Sistema de Gestión de Biblioteca que permita \[indicar el
-propósito principal del sistema\], utilizando Programación Orientada a
-Objetos, una base de datos relacional y una arquitectura por capas.
+---
 
-> **Reemplazar o ajustar según el proyecto desarrollado.**
+## 8. CASOS DE USO
 
-## 2.2 Objetivos específicos
+* **CU01 - Registrar Préstamo:** El bibliotecario selecciona el usuario y el libro; el sistema comprueba que existan ejemplares disponibles (`Existencias > 0`), guarda el registro con estado `'Prestado'` y descuenta una unidad al stock del libro.
+* **CU02 - Registrar Devolución:** El bibliotecario selecciona el préstamo activo de la grilla y hace clic en el botón de edición; el sistema actualiza la fecha de devolución, cambia el estado a `'Devuelto'` y repone una unidad al stock del libro (`+1`).
 
--   Diseñar e implementar una aplicación de escritorio para la gestión
-    de \[indicar alcance\].
--   Aplicar principios de Programación Orientada a Objetos.
--   Diseñar e implementar una base de datos relacional en SQL Server.
--   Implementar operaciones CRUD para las entidades principales.
--   Implementar validaciones de datos.
--   Implementar manejo de excepciones.
--   Aplicar una arquitectura por capas.
--   Implementar consultas que faciliten la administración de la
-    biblioteca.
--   Utilizar Git y GitHub para el control de versiones.
--   Documentar técnica y funcionalmente el proyecto.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/49090c8f-f49a-4e5b-a8fb-ce67cd90e708" />
 
-> **Eliminar o agregar objetivos según lo que realmente se haya
-> implementado.**
+---
 
-------------------------------------------------------------------------
+## 9. DIAGRAMA DE CLASES
 
-# 3. PLANTEAMIENTO DEL PROBLEMA
+El sistema se estructura mediante clases orientadas a objetos que representan tanto la interfaz gráfica (formularios hijos derivados de la clase `Form`) como la conectividad a bases de datos (`Conexion.cs`), empleando colecciones en memoria como `DataTable` y adaptadores de datos (`SqlDataAdapter`).
 
-## 3.1 Descripción del problema
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/08657040-03b3-4f45-8370-674c96ba9d15" />
 
-Describir la situación que origina la necesidad del sistema.
+---
 
-**Ejemplo:**
+## 10. MODELO ENTIDAD-RELACIÓN
 
-La biblioteca actualmente presenta dificultades para administrar de
-manera organizada la información relacionada con los libros, autores,
-usuarios y préstamos. El manejo manual de esta información puede generar
-errores, pérdida de información y dificultades para conocer la
-disponibilidad de los libros.
+El esquema relacional consta de 5 entidades principales:
+1. `Autores` (1 a N con `Libros`)
+2. `Editoriales` (1 a N con `Libros`)
+3. `Libros` (1 a N con `Prestamos`)
+4. `Usuarios` (1 a N con `Prestamos`)
+5. `Prestamos` (Tabla transaccional central)
 
-Por esta razón, se propone desarrollar una aplicación que permita
-centralizar y administrar la información de la biblioteca de manera
-organizada y eficiente.
+---
 
-> **Adaptar el texto a la problemática definida para el proyecto.**
+## 11. DICCIONARIO DE DATOS
 
-## 3.2 Justificación
+* **Autores:** `IdAutor` (PK, INT IDENTITY), `Nombre` (VARCHAR), `Apellido` (VARCHAR).
+* **Editoriales:** `IdEditorial` (PK, INT IDENTITY), `Nombre` (VARCHAR, UQ).
+* **Libros:** `ISBN` (PK, VARCHAR), `Titulo` (VARCHAR), `IdAutor` (FK), `IdEditorial` (FK), `Categoria` (VARCHAR), `Anio` (INT), `Existencias` (INT).
+* **Usuarios:** `IdUsuario` (PK, INT IDENTITY), `Nombre` (VARCHAR), `Apellido` (VARCHAR), `Documento` (VARCHAR, UQ), `Telefono` (VARCHAR), `Correo` (VARCHAR).
+* **Prestamos:** `IdPrestamo` (PK, INT IDENTITY), `IdUsuario` (FK), `ISBN` (FK), `FechaPrestamo` (DATETIME), `FechaDevolucion` (DATETIME), `Estado` (VARCHAR).
 
-Explicar por qué es importante desarrollar el sistema y qué beneficios
-proporciona.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1abdcde3-6d14-4f02-99aa-31b78a1047ce" />
 
-## 3.3 Alcance
+---
 
-El sistema permitirá:
+## 12. ARQUITECTURA DEL SISTEMA
 
--   Gestionar libros.
--   Gestionar autores.
--   Gestionar categorías.
--   Gestionar usuarios.
--   Registrar préstamos.
--   Registrar devoluciones.
--   Consultar disponibilidad.
--   Consultar historial de préstamos.
--   \[Agregar otras funcionalidades implementadas\].
+Se adopta una arquitectura lógica de capas para separar responsabilidades:
+* **Capa de Presentación:** Formularios Windows Forms encargados de la interacción visual y validación inicial de campos.
+* **Capa de Lógica de Negocio:** Validación de reglas operativas (existencias de inventario, estados de préstamos).
+* **Capa de Acceso a Datos:** Clase utilitaria `Conexion.cs` que encapsula la apertura y cierre de conexiones SQL.
+* **Capa de Base de Datos:** Motor relacional Microsoft SQL Server.
 
-### Fuera del alcance
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/9dd1289c-b24f-43be-9d86-33a0969a538d" />
 
-Indicar las funcionalidades que **no** forman parte de esta versión del
-proyecto.
+---
 
--   \[Funcionalidad no incluida\].
--   \[Funcionalidad no incluida\].
+## 13. EXPLICACIÓN DE LOS MÓDULOS DESARROLLADOS
 
-------------------------------------------------------------------------
+* **Módulo Inicio (`FrmInicio`):** Pantalla centralizada de bienvenida que orienta al operador sobre el uso del sistema.
+* **Módulos CRUD (Libros, Autores, Editoriales, Usuarios):** Formularios equipados con botonera estándar (Nuevo, Guardar, Editar, Eliminar, Cancelar) y grillas de visualización en tiempo real.
+* **Módulo Préstamos (`FrmPrestamos`):** Administra la lógica transaccional de entrega y devolución de material con actualización automática de stock.
 
-# 4. ANÁLISIS DE REQUERIMIENTOS
+---
 
-## 4.1 Descripción general
+## 14. DESCRIPCIÓN DE LA CONEXIÓN CON SQL SERVER
 
-El Sistema de Gestión de Biblioteca permitirá administrar la información
-relacionada con \[entidades principales\] y controlar los procesos de
-\[préstamos, devoluciones, consultas, etc.\].
+La conexión se gestiona mediante la librería oficial `Microsoft.Data.SqlClient`. La clase `Conexion.cs` centraliza la cadena de conexión al servidor local o instancia configurada, proveyendo métodos seguros para instanciar objetos `SqlConnection` bajo bloques `using`, garantizando la liberación de recursos y el uso de comandos parametrizados.
 
-## 4.2 Actores del sistema
+---
 
-  -----------------------------------------------------------------------
-  Actor                               Descripción
-  ----------------------------------- -----------------------------------
-  Bibliotecario / Administrador       \[Describir las funciones que
-                                      realiza en el sistema.\]
+## 15. CAPTURAS DE PANTALLA DEL SISTEMA
 
-  \[Otro actor\]                      \[Descripción.\]
-  -----------------------------------------------------------------------
+<img width="1362" height="760" alt="image" src="https://github.com/user-attachments/assets/c1e9a1df-6e1d-4625-884e-11dae302d9be" />
+<img width="1362" height="761" alt="image" src="https://github.com/user-attachments/assets/07553082-2eaa-43ec-8b93-c3c113949b3d" />
+<img width="1361" height="764" alt="image" src="https://github.com/user-attachments/assets/00d6bf7a-67a5-442c-8869-6f57d9062bef" />
+<img width="1355" height="765" alt="image" src="https://github.com/user-attachments/assets/ac3ff156-afa6-4067-8110-54767e4f7108" />
+<img width="1359" height="763" alt="image" src="https://github.com/user-attachments/assets/bb35d087-07fb-48eb-9107-b7ffb0ec6943" />
+<img width="1363" height="767" alt="image" src="https://github.com/user-attachments/assets/8ba831d4-3034-4b22-b31e-ff8f6197984e" />
+<img width="1358" height="708" alt="image" src="https://github.com/user-attachments/assets/1a3f95a5-5c1a-4ca1-b930-48eeeb6974e1" />
 
-> **Agregar únicamente los actores que realmente interactúan con el
-> sistema.**
+---
 
-## 4.3 Requerimientos funcionales
+## 16. PRUEBAS DE FUNCIONAMIENTO
 
-  -----------------------------------------------------------------------
-  Código                  Requerimiento           Descripción
-  ----------------------- ----------------------- -----------------------
-  RF01                    Gestionar libros        Registrar, consultar,
-                                                  actualizar, eliminar y
-                                                  buscar libros.
+* Pruebas de consulta de libros:
+  
+<img width="1044" height="594" alt="image" src="https://github.com/user-attachments/assets/a060b569-f052-4c5d-acc8-00ca743a5e1f" />
 
-  RF02                    Gestionar autores       Registrar, consultar,
-                                                  actualizar y eliminar
-                                                  autores.
+* Consulta y edición de Autores
 
-  RF03                    Gestionar categorías    Registrar, consultar,
-                                                  actualizar y eliminar
-                                                  categorías.
+<img width="1055" height="620" alt="image" src="https://github.com/user-attachments/assets/d538af27-f9d7-4402-9382-22dacad10a1a" />
 
-  RF04                    Gestionar usuarios      Registrar, consultar,
-                                                  actualizar y eliminar
-                                                  usuarios.
+* Guardar nuevos editoriales
 
-  RF05                    Registrar préstamos     Registrar préstamos y
-                                                  actualizar la
-                                                  disponibilidad de los
-                                                  libros.
+<img width="1061" height="597" alt="image" src="https://github.com/user-attachments/assets/d7aa8e61-005c-4056-acb3-5636e7fc6769" />
 
-  RF06                    Registrar devoluciones  Registrar devoluciones,
-                                                  calcular retrasos y
-                                                  multa cuando aplique.
+* Registro de prestamos
 
-  RF07                    Realizar consultas      Consultar libros
-                                                  disponibles, libros
-                                                  prestados, historial y
-                                                  usuarios con préstamos
-                                                  activos.
+<img width="977" height="581" alt="image" src="https://github.com/user-attachments/assets/0a9ba3da-532e-4f85-b18f-64a4d3383b67" />
 
-  RF08                    \[Otro requerimiento\]  \[Descripción.\]
-  -----------------------------------------------------------------------
+* Eliminar usuarios
 
-> **Importante:** modificar la tabla para que coincida exactamente con
-> las funcionalidades implementadas.
+<img width="1042" height="614" alt="image" src="https://github.com/user-attachments/assets/64cd1689-1063-4cd9-9abe-2f09647a17c4" />
 
-## 4.4 Requerimientos no funcionales
+* Generar reportes
 
-  -----------------------------------------------------------------------
-  Código                  Requerimiento           Descripción
-  ----------------------- ----------------------- -----------------------
-  RNF01                   Usabilidad              La interfaz debe ser
-                                                  clara, sencilla y fácil
-                                                  de utilizar.
+ <img width="1079" height="527" alt="image" src="https://github.com/user-attachments/assets/bfcba312-4668-4d50-9d0c-64b97e084d0f" />
 
-  RNF02                   Validación              El sistema debe validar
-                                                  la información
-                                                  ingresada por el
-                                                  usuario.
+---
 
-  RNF03                   Mantenibilidad          El código debe estar
-                                                  organizado y
-                                                  documentado.
+## 17. CONCLUSIONES
 
-  RNF04                   Arquitectura            El sistema debe
-                                                  utilizar una
-                                                  arquitectura por capas.
+* El desarrollo del proyecto permitió consolidar los conceptos fundamentales de la Programación Orientada a Objetos y la construcción de interfaces de escritorio funcionales con Windows Forms.
+* La integración de un sistema de control de inventario vinculado directamente a los movimientos de préstamos garantiza la confiabilidad y la integridad operativa de la base de datos relacional.
 
-  RNF05                   Manejo de excepciones   Las operaciones deben
-                                                  manejar errores de
-                                                  forma controlada.
+---
 
-  RNF06                   Integridad de datos     La información debe
-                                                  mantenerse consistente
-                                                  en la base de datos.
+## 18. RECOMENDACIONES
 
-  RNF07                   Consultas               Las consultas a la base
-                          parametrizadas          de datos deben utilizar
-                                                  parámetros.
+* Implementar un sistema de autenticación por credenciales y roles para diferenciar entre perfiles de operadores y administradores generales.
+* Añadir mecanismos de exportación de reportes a formatos digitales portables como PDF.
 
-  RNF08                   \[Otro requerimiento\]  \[Descripción.\]
-  -----------------------------------------------------------------------
+---
 
-## 4.5 Reglas de negocio
+## 19. REFERENCIAS BIBLIOGRÁFICAS
 
-### RN01 -- Código único del libro
-
-No se permitirá registrar dos libros con el mismo código.
-
-### RN02 -- Datos obligatorios
-
-No se permitirá almacenar registros con campos obligatorios vacíos.
-
-### RN03 -- Usuario existente
-
-No se podrá registrar un préstamo para un usuario inexistente.
-
-### RN04 -- Libro existente
-
-No se podrá registrar un préstamo para un libro inexistente.
-
-### RN05 -- Disponibilidad
-
-No se podrá prestar un libro cuando no existan ejemplares disponibles.
-
-### RN06 -- Actualización de disponibilidad
-
-Al registrar un préstamo, la disponibilidad del libro deberá
-actualizarse.
-
-### RN07 -- Devolución
-
-Al registrar una devolución, la disponibilidad deberá actualizarse
-nuevamente.
-
-### RN08 -- Multa
-
-La multa se calculará únicamente cuando exista retraso en la devolución.
-
-### RN09 -- \[Otra regla\]
-
-\[Descripción.\]
-
-------------------------------------------------------------------------
-
-# 5. CASOS DE USO
-
-## 5.1 Descripción
-
-Describir cómo interactúan los actores con las funcionalidades
-principales del sistema.
-
-## 5.2 Diagrama de casos de uso
-
-Insertar aquí el diagrama de casos de uso.
-
-**Archivo sugerido:**
-
-`![Diagrama de casos de uso](ruta/al/diagrama-casos-uso.png)`
-
-## 5.3 Descripción de casos de uso
-
-### CU01 -- Gestionar libros
-
-**Actor principal:** Bibliotecario / Administrador
-
-**Descripción:** Permite registrar, consultar, actualizar, eliminar y
-buscar libros.
-
-**Precondiciones:** - El usuario debe tener acceso al sistema. - \[Otra
-precondición.\]
-
-**Flujo principal:** 1. El actor ingresa al módulo de libros. 2. El
-sistema muestra los libros registrados. 3. El actor selecciona la
-operación que desea realizar. 4. El sistema procesa la solicitud. 5. El
-sistema muestra el resultado.
-
-**Flujos alternativos:** - \[Describir errores o situaciones
-alternativas.\]
-
-**Postcondiciones:** - \[Indicar el resultado de la operación.\]
-
-------------------------------------------------------------------------
-
-### CU02 -- Registrar préstamo
-
-**Actor principal:** Bibliotecario / Administrador
-
-**Descripción:** Permite registrar el préstamo de uno o varios libros a
-un usuario.
-
-**Precondiciones:** - El usuario debe existir. - El libro debe
-existir. - Debe existir disponibilidad.
-
-**Flujo principal:** 1. Seleccionar usuario. 2. Seleccionar libro. 3.
-Verificar disponibilidad. 4. Registrar préstamo. 5. Actualizar
-disponibilidad. 6. Mostrar confirmación.
-
-**Flujos alternativos:** - Usuario inexistente. - Libro inexistente. -
-Libro sin disponibilidad. - \[Otro caso.\]
-
-**Postcondiciones:** - El préstamo queda registrado. - La disponibilidad
-del libro queda actualizada.
-
-------------------------------------------------------------------------
-
-### CU03 -- Registrar devolución
-
-**Actor principal:** Bibliotecario / Administrador
-
-**Descripción:** Permite registrar la devolución de un libro prestado.
-
-**Precondiciones:** - Debe existir un préstamo activo.
-
-**Flujo principal:** 1. Seleccionar el préstamo. 2. Registrar la
-devolución. 3. Calcular días de retraso. 4. Calcular multa cuando
-corresponda. 5. Actualizar disponibilidad. 6. Actualizar el estado del
-préstamo. 7. Mostrar confirmación.
-
-**Flujos alternativos:** - \[Describir situaciones de error.\]
-
-**Postcondiciones:** - La devolución queda registrada. - El libro vuelve
-a estar disponible según corresponda.
-
-------------------------------------------------------------------------
-
-# 6. DIAGRAMA DE CLASES
-
-## 6.1 Descripción
-
-Describir las principales clases utilizadas en el sistema y su
-responsabilidad.
-
-## 6.2 Diagrama de clases
-
-Insertar aquí el diagrama de clases.
-
-`![Diagrama de clases](ruta/al/diagrama-clases.png)`
-
-## 6.3 Principales clases
-
-  Clase             Responsabilidad
-  ----------------- --------------------------------------------------------
-  Libro             Representar y gestionar la información de los libros.
-  Autor             Representar y gestionar los autores.
-  Categoria         Representar las categorías de los libros.
-  Usuario           Representar los usuarios de la biblioteca.
-  Prestamo          Gestionar la información de los préstamos.
-  DetallePrestamo   Relacionar los libros incluidos en un préstamo.
-  Devolucion        Gestionar las devoluciones y calcular retrasos/multas.
-  \[Otra clase\]    \[Responsabilidad.\]
-
-## 6.4 Aplicación de POO
-
-Explicar cómo se aplicaron:
-
--   Clases.
--   Objetos.
--   Constructores.
--   Métodos.
--   Propiedades.
--   Encapsulamiento.
--   Colecciones.
--   Herencia, si aplica.
--   Polimorfismo, si aplica.
--   Sobrecarga, si aplica.
-
-------------------------------------------------------------------------
-
-# 7. MODELO ENTIDAD-RELACIÓN
-
-## 7.1 Descripción
-
-Explicar el modelo de datos diseñado para almacenar la información del
-sistema.
-
-## 7.2 Diagrama entidad-relación
-
-Insertar aquí el modelo entidad-relación.
-
-`![Modelo entidad-relación](ruta/al/modelo-entidad-relacion.png)`
-
-## 7.3 Relaciones principales
-
-Describir las relaciones entre las entidades.
-
-**Ejemplo:**
-
--   Un autor puede tener muchos libros.
--   Una categoría puede estar asociada a muchos libros.
--   Un usuario puede realizar muchos préstamos.
--   Un préstamo puede contener uno o varios detalles.
--   Un detalle de préstamo corresponde a un libro.
--   Un detalle puede generar una devolución.
-
-> **Modificar según el modelo de base de datos realmente implementado.**
-
-------------------------------------------------------------------------
-
-# 8. DICCIONARIO DE DATOS
-
-## 8.1 Convenciones
-
-  Abreviatura   Significado
-  ------------- -----------------------------
-  PK            Clave primaria
-  FK            Clave foránea
-  UQ            Campo con valor único
-  NULL          Campo que puede estar vacío
-  NOT NULL      Campo obligatorio
-
-## 8.2 Tabla: Autor
-
-  Campo             Tipo de dato   Clave   Nulo   Descripción
-  ----------------- -------------- ------- ------ --------------------------------
-  idAutor           INT            PK      No     Identificador único del autor.
-  nombre            VARCHAR(100)   \-      No     Nombre del autor.
-  apellidos         VARCHAR(100)   \-      No     Apellidos del autor.
-  nacionalidad      VARCHAR(50)    \-      Sí     Nacionalidad del autor.
-  fechaNacimiento   DATE           \-      Sí     Fecha de nacimiento.
-
-## 8.3 Tabla: Categoria
-
-  Campo         Tipo de dato   Clave   Nulo   Descripción
-  ------------- -------------- ------- ------ --------------------------------------
-  idCategoria   INT            PK      No     Identificador único de la categoría.
-  nombre        VARCHAR(50)    UQ      No     Nombre de la categoría.
-  descripcion   VARCHAR(200)   \-      Sí     Descripción de la categoría.
-
-## 8.4 Tabla: Libro
-
-  Campo             Tipo de dato   Clave   Nulo   Descripción
-  ----------------- -------------- ------- ------ -----------------------------------
-  idLibro           INT            PK      No     Identificador único del libro.
-  codigo            VARCHAR(20)    UQ      No     Código único del libro.
-  titulo            VARCHAR(200)   \-      No     Título del libro.
-  anioPublicacion   INT            \-      Sí     Año de publicación.
-  idAutor           INT            FK      No     Autor asociado al libro.
-  idCategoria       INT            FK      No     Categoría del libro.
-  cantidad          INT            \-      No     Cantidad de ejemplares.
-  estado            VARCHAR(20)    \-      No     Estado del libro.
-  sinopsis          VARCHAR(500)   \-      Sí     Descripción o sinopsis del libro.
-
-## 8.5 Tabla: Usuario
-
-  Campo             Tipo de dato   Clave   Nulo   Descripción
-  ----------------- -------------- ------- ------ ----------------------------------
-  idUsuario         INT            PK      No     Identificador único del usuario.
-  documento         VARCHAR(20)    UQ      No     Número de documento.
-  tipoDocumento     VARCHAR(20)    \-      No     Tipo de documento.
-  nombre            VARCHAR(100)   \-      No     Nombre del usuario.
-  apellidos         VARCHAR(100)   \-      No     Apellidos del usuario.
-  direccion         VARCHAR(150)   \-      Sí     Dirección del usuario.
-  telefono          VARCHAR(20)    \-      Sí     Teléfono de contacto.
-  correo            VARCHAR(100)   \-      Sí     Correo electrónico.
-  fechaNacimiento   DATE           \-      Sí     Fecha de nacimiento.
-  estado            VARCHAR(20)    \-      No     Estado del usuario.
-
-## 8.6 Tabla: Prestamo
-
-  Campo           Tipo de dato   Clave   Nulo   Descripción
-  --------------- -------------- ------- ------ -----------------------------------
-  idPrestamo      INT            PK      No     Identificador único del préstamo.
-  idUsuario       INT            FK      No     Usuario que realiza el préstamo.
-  fechaPrestamo   DATETIME       \-      No     Fecha del préstamo.
-  estado          VARCHAR(20)    \-      No     Estado del préstamo.
-
-## 8.7 Tabla: DetallePrestamo
-
-  ---------------------------------------------------------------------------------------
-  Campo                     Tipo de dato    Clave          Nulo           Descripción
-  ------------------------- --------------- -------------- -------------- ---------------
-  idDetalle                 INT             PK             No             Identificador
-                                                                          único del
-                                                                          detalle.
-
-  idPrestamo                INT             FK             No             Préstamo al que
-                                                                          pertenece.
-
-  idLibro                   INT             FK             No             Libro prestado.
-
-  fechaDevolucionEstimada   DATE            \-             No             Fecha estimada
-                                                                          de devolución.
-
-  fechaDevolucionReal       DATE            \-             Sí             Fecha real de
-                                                                          devolución.
-
-  valor                     DECIMAL(10,2)   \-             No             Valor asociado
-                                                                          al préstamo, si
-                                                                          aplica.
-
-  multa                     DECIMAL(10,2)   \-             Sí             Valor de la
-                                                                          multa generada.
-
-  estado                    VARCHAR(20)     \-             No             Estado del
-                                                                          detalle.
-  ---------------------------------------------------------------------------------------
-
-## 8.8 Tabla: Devolucion
-
-  Campo             Tipo de dato    Clave   Nulo   Descripción
-  ----------------- --------------- ------- ------ ---------------------------------------
-  idDevolucion      INT             PK      No     Identificador único de la devolución.
-  idDetalle         INT             FK      No     Detalle del préstamo devuelto.
-  fechaDevolucion   DATETIME        \-      No     Fecha de devolución.
-  diasRetraso       INT             \-      No     Número de días de retraso.
-  multa             DECIMAL(10,2)   \-      Sí     Valor de la multa, si aplica.
-
-> **IMPORTANTE:** El diccionario debe coincidir exactamente con el
-> script SQL final. Si los nombres, tipos o campos de la base de datos
-> son diferentes, actualizar esta sección.
-
-------------------------------------------------------------------------
-
-# 9. ARQUITECTURA DEL SISTEMA
-
-## 9.1 Descripción general
-
-El Sistema de Gestión de Biblioteca se desarrolla utilizando una
-**arquitectura por capas**, con el propósito de separar las
-responsabilidades del sistema y facilitar su mantenimiento, organización
-y evolución.
-
-La arquitectura está compuesta por:
-
-1.  Capa de Presentación.
-2.  Capa de Lógica de Negocio.
-3.  Capa de Acceso a Datos.
-4.  Capa de Base de Datos.
-
-## 9.2 Diagrama de arquitectura
-
-Insertar aquí el diagrama de arquitectura.
-
-`![Arquitectura del sistema](ruta/al/diagrama-arquitectura.png)`
-
-## 9.3 Capa de Presentación
-
-**Responsabilidad:**
-
-Es la capa mediante la cual el usuario interactúa con el sistema.
-
-**Componentes:**
-
--   \[FrmPrincipal\]
--   \[FrmLibros\]
--   \[FrmAutores\]
--   \[FrmCategorias\]
--   \[FrmUsuarios\]
--   \[FrmPrestamos\]
--   \[FrmDevoluciones\]
-
-**Tecnología utilizada:**
-
--   C#
--   Windows Forms
--   \[.NET versión utilizada\]
-
-## 9.4 Capa de Lógica de Negocio
-
-**Responsabilidad:**
-
-Procesa las solicitudes provenientes de la interfaz, aplica las reglas
-de negocio y coordina las operaciones.
-
-**Componentes:**
-
--   \[LibroController\]
--   \[AutorController\]
--   \[CategoriaController\]
--   \[UsuarioController\]
--   \[PrestamoController\]
--   \[DevolucionController\]
-
-**Ejemplos de reglas:**
-
--   Validar disponibilidad.
--   Validar existencia del usuario.
--   Validar existencia del libro.
--   Calcular días de retraso.
--   Calcular multa.
--   Actualizar estados.
-
-## 9.5 Capa de Acceso a Datos
-
-**Responsabilidad:**
-
-Gestiona la comunicación entre la aplicación y SQL Server.
-
-**Componentes:**
-
--   \[Conexion\]
--   \[LibroDAO\]
--   \[AutorDAO\]
--   \[CategoriaDAO\]
--   \[UsuarioDAO\]
--   \[PrestamoDAO\]
--   \[DevolucionDAO\]
-
-**Tecnologías utilizadas:**
-
--   SQL Server.
--   ADO.NET / \[tecnología realmente utilizada\].
--   Consultas parametrizadas.
-
-## 9.6 Capa de Base de Datos
-
-La información del sistema se almacena en:
-
-**Base de datos:** `[NombreBaseDatos]`
-
-**Tablas principales:**
-
--   Autor
--   Categoria
--   Libro
--   Usuario
--   Prestamo
--   DetallePrestamo
--   Devolucion
-
-## 9.7 Flujo de información
-
-``` text
-Usuario
-   ↓
-Presentación
-   ↓
-Lógica de Negocio
-   ↓
-Acceso a Datos
-   ↓
-SQL Server
-```
-
-Las respuestas de la base de datos realizan el recorrido inverso hasta
-llegar nuevamente a la interfaz.
-
-------------------------------------------------------------------------
-
-# 10. EXPLICACIÓN DE CADA MÓDULO DESARROLLADO
-
-## 10.1 Módulo de libros
-
-**Objetivo:** \[Descripción.\]
-
-**Funcionalidades:** - Registrar. - Consultar. - Actualizar. -
-Eliminar. - Buscar.
-
-**Validaciones:** - \[Validación.\] - \[Validación.\]
-
-## 10.2 Módulo de autores
-
-**Objetivo:** \[Descripción.\]
-
-**Funcionalidades:** - Registrar. - Consultar. - Actualizar. - Eliminar.
-
-## 10.3 Módulo de categorías
-
-**Objetivo:** \[Descripción.\]
-
-**Funcionalidades:** - Registrar. - Consultar. - Actualizar. - Eliminar.
-
-## 10.4 Módulo de usuarios
-
-**Objetivo:** \[Descripción.\]
-
-**Funcionalidades:** - Registrar. - Consultar. - Actualizar. - Eliminar.
-
-## 10.5 Módulo de préstamos
-
-**Objetivo:** \[Descripción.\]
-
-**Funcionalidades:** - Registrar préstamo. - Consultar préstamos
-activos. - Consultar historial. - Actualizar disponibilidad.
-
-## 10.6 Módulo de devoluciones
-
-**Objetivo:** \[Descripción.\]
-
-**Funcionalidades:** - Registrar devolución. - Calcular días de
-retraso. - Calcular multa cuando aplique. - Actualizar disponibilidad.
-
-## 10.7 Módulo de consultas
-
-**Consultas implementadas:**
-
--   Total de libros registrados.
--   Total de usuarios registrados.
--   Libros disponibles.
--   Libros prestados.
--   Usuarios con préstamos activos.
--   Historial de préstamos.
--   Libros más prestados.
--   \[Otras consultas implementadas.\]
-
-> **Eliminar las consultas que no estén implementadas y agregar las que
-> sí existan.**
-
-------------------------------------------------------------------------
-
-# 11. CAPTURAS DE PANTALLA DEL SISTEMA
-
-En esta sección se deben incluir evidencias de las principales
-funcionalidades.
-
-## 11.1 Menú principal
-
-![Menú principal](ruta/captura-menu.png)
-
-**Descripción:** \[Explicar brevemente la pantalla.\]
-
-## 11.2 Gestión de libros
-
-![Gestión de libros](ruta/captura-libros.png)
-
-**Descripción:** \[Explicar la funcionalidad.\]
-
-## 11.3 Gestión de autores
-
-![Gestión de autores](ruta/captura-autores.png)
-
-**Descripción:** \[Explicar la funcionalidad.\]
-
-## 11.4 Gestión de categorías
-
-![Gestión de categorías](ruta/captura-categorias.png)
-
-**Descripción:** \[Explicar la funcionalidad.\]
-
-## 11.5 Gestión de usuarios
-
-![Gestión de usuarios](ruta/captura-usuarios.png)
-
-**Descripción:** \[Explicar la funcionalidad.\]
-
-## 11.6 Registro de préstamos
-
-![Registro de préstamos](ruta/captura-prestamos.png)
-
-**Descripción:** \[Explicar la funcionalidad.\]
-
-## 11.7 Registro de devoluciones
-
-![Registro de devoluciones](ruta/captura-devoluciones.png)
-
-**Descripción:** \[Explicar la funcionalidad.\]
-
-## 11.8 Consultas
-
-![Consultas](ruta/captura-consultas.png)
-
-**Descripción:** \[Explicar la funcionalidad.\]
-
-> **Recomendación:** cada captura debe tener una breve explicación y
-> mostrar una funcionalidad real del sistema.
-
-------------------------------------------------------------------------
-
-# 12. PRUEBAS DE FUNCIONAMIENTO
-
-## 12.1 Estrategia de pruebas
-
-Describir cómo se verificó el funcionamiento del sistema.
-
-## 12.2 Casos de prueba
-
-  ------------------------------------------------------------------------------------------
-  ID          Funcionalidad   Entrada / Acción Resultado        Resultado       Estado
-                                               esperado         obtenido        
-  ----------- --------------- ---------------- ---------------- --------------- ------------
-  CP01        Registrar libro Datos válidos    Libro registrado \[Resultado\]   Aprobado
-                                               correctamente                    
-
-  CP02        Registrar libro Código repetido  Mostrar mensaje  \[Resultado\]   Aprobado
-                                               de validación                    
-
-  CP03        Registrar       Datos válidos    Usuario          \[Resultado\]   Aprobado
-              usuario                          registrado                       
-
-  CP04        Registrar       Libro disponible Préstamo         \[Resultado\]   Aprobado
-              préstamo                         registrado y                     
-                                               disponibilidad                   
-                                               actualizada                      
-
-  CP05        Registrar       Libro sin        No permitir el   \[Resultado\]   Aprobado
-              préstamo        disponibilidad   préstamo                         
-
-  CP06        Registrar       Préstamo activo  Registrar        \[Resultado\]   Aprobado
-              devolución                       devolución y                     
-                                               actualizar                       
-                                               disponibilidad                   
-
-  CP07        Devolución con  Fecha posterior  Calcular retraso \[Resultado\]   Aprobado
-              retraso         a la estimada    y multa                          
-
-  CP08        Consulta        Consultar libros Mostrar libros   \[Resultado\]   Aprobado
-                              disponibles      disponibles                      
-
-  CP09        \[Otra prueba\] \[Entrada\]      \[Resultado      \[Resultado\]   \[Estado\]
-                                               esperado\]                       
-  ------------------------------------------------------------------------------------------
-
-## 12.3 Evidencias de pruebas
-
-Insertar capturas que demuestren los resultados de las pruebas.
-
-### Prueba CP01
-
-![Evidencia CP01](ruta/prueba01.png)
-
-**Resultado:** \[Descripción.\]
-
-### Prueba CP02
-
-![Evidencia CP02](ruta/prueba02.png)
-
-**Resultado:** \[Descripción.\]
-
-------------------------------------------------------------------------
-
-# 13. CONCLUSIONES
-
-## Conclusión 1
-
-\[Explicar qué se logró con el desarrollo del proyecto.\]
-
-## Conclusión 2
-
-\[Explicar los conocimientos de Programación Orientada a Objetos
-aplicados.\]
-
-## Conclusión 3
-
-\[Explicar los resultados obtenidos con la base de datos y la
-arquitectura por capas.\]
-
-## Conclusión 4
-
-\[Explicar dificultades encontradas y cómo fueron solucionadas.\]
-
-------------------------------------------------------------------------
-
-# 14. RECOMENDACIONES
-
--   \[Recomendación relacionada con futuras mejoras.\]
--   \[Recomendación relacionada con seguridad.\]
--   \[Recomendación relacionada con mantenimiento.\]
--   \[Recomendación relacionada con nuevas funcionalidades.\]
--   \[Otra recomendación.\]
-
-------------------------------------------------------------------------
-
-# 15. REFERENCIAS BIBLIOGRÁFICAS
-
-> Utilizar **Normas APA, última edición**.
-
-Ejemplos de formato:
-
-**Libro:**
-
-Apellido, N. (Año). *Título del libro*. Editorial.
-
-**Página web:**
-
-Autor/Organización. (Año). *Título del recurso*. URL
-
-**Documentación técnica:**
-
-Microsoft. (Año). *\[Título de la documentación consultada\]*. Microsoft
-Learn.
-
-> **Importante:** incluir únicamente las fuentes que realmente fueron
-> consultadas durante el desarrollo del proyecto.
-
-------------------------------------------------------------------------
-
-# ANEXOS
-
-## Anexo A. Repositorio GitHub
-
-**Repositorio:** \[Enlace al repositorio\]
-
-## Anexo B. Script de base de datos
-
-**Archivo:** `[Nombre del archivo .sql]`
-
-## Anexo C. Evidencia de Git y GitHub
-
-Insertar capturas que evidencien:
-
--   Creación del repositorio.
--   Commits realizados.
--   Organización del proyecto.
--   Publicación del código.
--   README.md.
-
-## Anexo D. Otras evidencias
-
-\[Agregar cualquier evidencia adicional relevante.\]
-
-------------------------------------------------------------------------
-
-# LISTA DE VERIFICACIÓN ANTES DE ENTREGAR
-
--   [ ] Portada.
--   [ ] Contraportada.
--   [ ] Introducción.
--   [ ] Objetivos.
--   [ ] Tabla de contenido.
--   [ ] Numeración de páginas.
--   [ ] Planteamiento del problema.
--   [ ] Análisis de requerimientos.
--   [ ] Casos de uso.
--   [ ] Diagrama de casos de uso.
--   [ ] Diagrama de clases.
--   [ ] Modelo entidad-relación.
--   [ ] Diccionario de datos.
--   [ ] Arquitectura del sistema.
--   [ ] Explicación de cada módulo.
--   [ ] Capturas de pantalla.
--   [ ] Pruebas de funcionamiento.
--   [ ] Conclusiones.
--   [ ] Recomendaciones.
--   [ ] Referencias bibliográficas en formato APA.
--   [ ] Código fuente completo.
--   [ ] Script SQL.
--   [ ] Datos de prueba.
--   [ ] Repositorio GitHub.
--   [ ] README.md.
--   [ ] Evidencia de commits.
-
-------------------------------------------------------------------------
-
-## NOTA PARA EL ESTUDIANTE
-
-Este documento es una **plantilla de apoyo**. Antes de entregar, se
-deben reemplazar todos los textos entre `[corchetes]`, eliminar las
-instrucciones y adaptar cada sección a las funcionalidades que realmente
-fueron desarrolladas.
-
-La documentación debe ser coherente con:
-
-1.  El código fuente.
-2.  La base de datos.
-3.  El modelo entidad-relación.
-4.  El diagrama de clases.
-5.  Los casos de uso.
-6.  La arquitectura implementada.
-7.  Las capturas y pruebas realizadas.
-
-**No se deben documentar funcionalidades que no hayan sido
-implementadas.**
+* Microsoft. (2026). *Guía de referencia de Windows Forms y ADO.NET*. Microsoft Learn.
+* CUN. (2026). *Fundamentos y Guía Práctica de Programación Avanzada*. Institución Universitaria CUN.
