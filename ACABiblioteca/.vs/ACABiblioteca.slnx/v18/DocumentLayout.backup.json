@@ -15,11 +15,11 @@
       "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmprestamos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|c:\\users\\juli\\documents\\github\\acabiblioteca\\acabiblioteca\\acabiblioteca\\frmautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\acabiblioteca\\frmautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|c:\\users\\juli\\documents\\github\\acabiblioteca\\acabiblioteca\\acabiblioteca\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\acabiblioteca\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|c:\\users\\juli\\documents\\github\\acabiblioteca\\acabiblioteca\\acabiblioteca\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\acabiblioteca\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -115,8 +115,7 @@
               "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\FrmUsuarios.cs [Dise\u00F1o]",
               "RelativeToolTip": "ACABiblioteca\\FrmUsuarios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-07T16:07:46.701Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-11-07T16:07:46.701Z"
             },
             {
               "$type": "Document",
@@ -127,8 +126,7 @@
               "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmlibros.cs [Dise\u00F1o]",
               "RelativeToolTip": "ACABiblioteca\\Frmlibros.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-04T02:06:02.884Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-11-04T02:06:02.884Z"
             },
             {
               "$type": "Document",
@@ -151,8 +149,7 @@
               "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmreportes.cs [Dise\u00F1o]",
               "RelativeToolTip": "ACABiblioteca\\Frmreportes.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-04T02:07:59.712Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-11-04T02:07:59.712Z"
             },
             {
               "$type": "Document",
@@ -163,8 +160,7 @@
               "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmeditoriales.cs [Dise\u00F1o]",
               "RelativeToolTip": "ACABiblioteca\\Frmeditoriales.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-04T02:07:15.583Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-11-04T02:07:15.583Z"
             },
             {
               "$type": "Document",
@@ -188,8 +184,7 @@
               "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\FrmPrincipal.cs [Dise\u00F1o]",
               "RelativeToolTip": "ACABiblioteca\\FrmPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-07T16:22:29.276Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-11-07T16:22:29.276Z"
             },
             {
               "$type": "Document",
@@ -200,8 +195,7 @@
               "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\FrmAutores.cs [Dise\u00F1o]",
               "RelativeToolTip": "ACABiblioteca\\FrmAutores.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-07T15:25:36.891Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-11-07T15:25:36.891Z"
             },
             {
               "$type": "Document",
@@ -212,8 +206,7 @@
               "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frminicio.cs [Dise\u00F1o]",
               "RelativeToolTip": "ACABiblioteca\\Frminicio.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-04T02:05:39.412Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-11-04T02:05:39.412Z"
             },
             {
               "$type": "Document",
@@ -225,8 +218,7 @@
               "RelativeToolTip": "ACABiblioteca\\Frmeditoriales.cs",
               "ViewState": "AgIAAOcAAAAAAAAAAAAqwP4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-07T16:29:23.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-07T16:29:23.329Z"
             },
             {
               "$type": "Document",
@@ -238,8 +230,7 @@
               "RelativeToolTip": "ACABiblioteca\\Frmeditoriales.Designer.cs",
               "ViewState": "AgIAAIsAAAAAAAAAAAAqwKYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-07T16:29:46.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-07T16:29:46.034Z"
             },
             {
               "$type": "Document",
@@ -251,8 +242,7 @@
               "RelativeToolTip": "ACABiblioteca\\FrmUsuarios.Designer.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAawC8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-07T16:15:37.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-07T16:15:37.47Z"
             },
             {
               "$type": "Document",
@@ -264,8 +254,7 @@
               "RelativeToolTip": "ACABiblioteca\\FrmUsuarios.cs",
               "ViewState": "AgIAACEBAAAAAAAAAAAYwDABAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-07T16:19:23.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-07T16:19:23.495Z"
             },
             {
               "$type": "Document",
@@ -277,8 +266,7 @@
               "RelativeToolTip": "ACABiblioteca\\FrmAutores.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAMsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-07T15:27:07.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-07T15:27:07.402Z"
             },
             {
               "$type": "Document",
@@ -290,8 +278,7 @@
               "RelativeToolTip": "ACABiblioteca\\FrmPrincipal.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-04T01:02:21.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-04T01:02:21.24Z"
             },
             {
               "$type": "Document",
@@ -303,8 +290,7 @@
               "RelativeToolTip": "ACABiblioteca\\Datos\\Conexion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAACCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-06T02:20:15.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-06T02:20:15.085Z"
             },
             {
               "$type": "Document",
@@ -316,8 +302,7 @@
               "RelativeToolTip": "ACABiblioteca\\FrmAutores.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-07T15:51:00.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-07T15:51:00.266Z"
             },
             {
               "$type": "Document",
@@ -329,8 +314,7 @@
               "RelativeToolTip": "ACABiblioteca\\ACABiblioteca.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-06T02:19:04.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-06T02:19:04.315Z"
             },
             {
               "$type": "Document",
