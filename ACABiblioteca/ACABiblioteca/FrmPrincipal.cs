@@ -37,7 +37,8 @@ namespace ACABiblioteca
             // MessageBoxIcon.Error);
             //}
 
-            AbrirFormulario(new Frminicio());
+            AbrirFormulario(new FrmInicio());
+            btnInicio.Click += btninicio_Click;
         }
 
         private void AbrirFormulario(Form formulario)
@@ -68,7 +69,7 @@ namespace ACABiblioteca
 
         private void btninicio_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Frminicio());
+            AbrirFormulario(new FrmInicio());
         }
 
         private void BtnLibros_Click(object sender, EventArgs e)
@@ -78,32 +79,48 @@ namespace ACABiblioteca
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Frmusuarios());
+            AbrirFormulario(new FrmUsuarios());
         }
 
         private void bntAutores_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Frmautores());
+            AbrirFormulario(new FrmAutores());
         }
 
         private void btnEditoriales_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Frmeditoriales());
+            AbrirFormulario(new FrmEditoriales());
         }
 
         private void btnPrestamos_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Frmprestamos());
+            AbrirFormulario(new FrmPrestamos());
         }
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Frmreportes());
+            AbrirFormulario(new FrmReportes());
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            // Llama a tu método genérico para abrir formularios hijos (el mismo que usas para Libros, Usuarios, etc.)
+            AbrirFormularioHijo(new FrmInicio());
+        }
+        private void AbrirFormularioHijo(Form formHijo)
+        {
+            // Cierra o limpia el panel contenedor si ya tiene un formulario abierto
+            // (Asumiendo que tu panel contenedor se llama 'pnlContenedor' o similar)
+            // formHijo.TopLevel = false;
+            // formHijo.FormBorderStyle = FormBorderStyle.None;
+            // formHijo.Dock = DockStyle.Fill;
+            // pnlContenedor.Controls.Add(formHijo);
+            // pnlContenedor.Tag = formHijo;
+            // formHijo.Show();
         }
     }
 }

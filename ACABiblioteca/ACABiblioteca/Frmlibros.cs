@@ -21,7 +21,7 @@ namespace ACABiblioteca
             CargarAutores();
             CargarEditoriales();
 
-            
+
             btnBuscar.Click += btnbuscar_Click;
             btnguardar.Click += btnguardar_Click;
             btnnuevo.Click += btnnuevo_Click;
@@ -520,7 +520,7 @@ namespace ACABiblioteca
             }
         }
 
-       private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
             txtisbn.Clear();
             txttitulo.Clear();
@@ -532,6 +532,16 @@ namespace ACABiblioteca
             cmbeditorial.SelectedIndex = -1;
 
             modoEdicion = false;
+        }
+
+        private void lbltitulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PnlDatos_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

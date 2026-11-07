@@ -8,11 +8,16 @@ using System.Windows.Forms;
 
 namespace ACABiblioteca
 {
-    public partial class Frminicio : Form
+    public partial class FrmInicio : Form
     {
-        public Frminicio()
+        public FrmInicio()
         {
             InitializeComponent();
+        }
+
+        private void FrmInicio_Load(object sender, EventArgs e)
+        {
+            // Puedes agregar inicializaciones adicionales si lo deseas
         }
     }
 }
