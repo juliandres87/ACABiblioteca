@@ -1,0 +1,280 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|c:\\users\\juli\\documents\\github\\acabiblioteca\\acabiblioteca\\acabiblioteca\\frmautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\acabiblioteca\\frmautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|c:\\users\\juli\\documents\\github\\acabiblioteca\\acabiblioteca\\acabiblioteca\\frmlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\acabiblioteca\\frmlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|c:\\users\\juli\\documents\\github\\acabiblioteca\\acabiblioteca\\acabiblioteca\\frmlibros.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmlibros.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|c:\\users\\juli\\documents\\github\\acabiblioteca\\acabiblioteca\\acabiblioteca\\frmprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|c:\\users\\juli\\documents\\github\\acabiblioteca\\acabiblioteca\\acabiblioteca\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\acabiblioteca\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\acabiblioteca\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|c:\\users\\juli\\documents\\github\\acabiblioteca\\acabiblioteca\\acabiblioteca\\acabiblioteca.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\acabiblioteca.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|c:\\users\\juli\\documents\\github\\acabiblioteca\\acabiblioteca\\acabiblioteca\\datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\acabiblioteca\\frmprestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmprestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\acabiblioteca\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\acabiblioteca\\frmeditoriales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frmeditoriales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\acabiblioteca\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|c:\\users\\juli\\documents\\github\\acabiblioteca\\acabiblioteca\\acabiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B1E8C3-74E9-A2D7-020A-DA826A7A164A}|ACABiblioteca\\ACABiblioteca.csproj|solutionrelative:acabiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\FrmPrincipal.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\FrmPrincipal.cs",
+              "RelativeToolTip": "ACABiblioteca\\FrmPrincipal.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T23:55:01.266Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Frmautores.cs",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmautores.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\Frmautores.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmautores.cs",
+              "RelativeToolTip": "ACABiblioteca\\Frmautores.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T14:27:05.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Frmautores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmautores.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\Frmautores.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmautores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ACABiblioteca\\Frmautores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T02:06:39.718Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Frmlibros.cs",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmlibros.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\Frmlibros.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmlibros.cs",
+              "RelativeToolTip": "ACABiblioteca\\Frmlibros.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAkwCAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T02:48:14.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Frmlibros.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmlibros.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\Frmlibros.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmlibros.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ACABiblioteca\\Frmlibros.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T02:06:02.884Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmPrincipal.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\FrmPrincipal.Designer.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\FrmPrincipal.Designer.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\FrmPrincipal.Designer.cs",
+              "RelativeToolTip": "ACABiblioteca\\FrmPrincipal.Designer.cs",
+              "ViewState": "AgIAAFYBAAAAAAAAAAA7wAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T01:02:21.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Frmlibros.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmlibros.Designer.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\Frmlibros.Designer.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmlibros.Designer.cs",
+              "RelativeToolTip": "ACABiblioteca\\Frmlibros.Designer.cs",
+              "ViewState": "AgIAAE8BAAAAAAAAAAAuwFsBAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-07T00:47:31.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ACABiblioteca.csproj",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca.csproj",
+              "RelativeDocumentMoniker": "ACABiblioteca\\ACABiblioteca.csproj",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca.csproj",
+              "RelativeToolTip": "ACABiblioteca\\ACABiblioteca.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-06T02:19:04.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Datos\\Conexion.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\Datos\\Conexion.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Datos\\Conexion.cs",
+              "RelativeToolTip": "ACABiblioteca\\Datos\\Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T02:20:15.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\FrmPrincipal.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\FrmPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ACABiblioteca\\FrmPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T01:05:40.118Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Frmreportes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmreportes.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\Frmreportes.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmreportes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ACABiblioteca\\Frmreportes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T02:07:59.712Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Frmprestamos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmprestamos.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\Frmprestamos.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmprestamos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ACABiblioteca\\Frmprestamos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T02:07:38.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Frmeditoriales.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmeditoriales.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\Frmeditoriales.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmeditoriales.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ACABiblioteca\\Frmeditoriales.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T02:07:15.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Frmusuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmusuarios.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\Frmusuarios.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frmusuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ACABiblioteca\\Frmusuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T02:06:21.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Frminicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frminicio.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\Frminicio.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Frminicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ACABiblioteca\\Frminicio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T02:05:39.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Program.cs",
+              "RelativeDocumentMoniker": "ACABiblioteca\\Program.cs",
+              "ToolTip": "C:\\Users\\JULI\\Documents\\GitHub\\ACABiblioteca\\ACABiblioteca\\ACABiblioteca\\Program.cs",
+              "RelativeToolTip": "ACABiblioteca\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T00:02:47.49Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
